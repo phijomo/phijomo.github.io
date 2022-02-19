@@ -1,0 +1,80 @@
+<html>
+<body>
+<head>
+  <script>
+// If `prefers-color-scheme` is not supported, fall back to light mode.
+// In this case, light.css will be downloaded with `highest` priority.
+if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+document.documentElement.style.display = 'none';
+document.head.insertAdjacentHTML(
+  'beforeend',
+  '<link rel="stylesheet" href="mystyle_light.css" onload="document.documentElement.style.display = \'\'">',
+);
+}
+</script>
+<!--
+Conditionally either load the light or the dark stylesheet. The matching file
+will be downloaded with `highest`, the non-matching file with `lowest`
+priority. If the browser doesn't support `prefers-color-scheme`, the media
+query is unknown and the files are downloaded with `lowest` priority (but
+above I already force `highest` priority for my default light experience).
+-->
+  <link rel="stylesheet" href="mystyle_dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="mystyle_light.css" media="(prefers-color-scheme: light)"/>
+  <link rel="icon" type="image/ico" href="favicon.ico"/>
+  <link rel="stylesheet" href="css/academicons.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<script src="https://kit.fontawesome.com/671b425026.js" crossorigin="anonymous"></script>-->
+</head>
+<title>philip j monahan</title>
+<div class="container">
+<div class="outer">
+<div class="page">
+<h1 align="right">philip j monahan</h1>
+
+<!--NAVIGATION-->
+<nav id="primary_nav_wrap">
+<ul>
+  <li><a class="textlink" href="index.html">home</a></li>
+  <li><a class="textlink" href="research.html">research</a></li>
+  <li><a class="textlink" href="teaching.html">teaching</a></li>
+  <li class="current-menu-item"><a class="textlink" href="personal.html">personal</a></li>
+</ul>
+</nav>
+<!--END NAVIGATION-->
+<div class="body">
+  <h2>photography</h2>
+  <p class="body">
+    <a class = "webicons iconlinks" href="https://www.instagram.com/phijomo/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a class = "webicons iconlinks" href="https://www.flickr.com/phijomo/" target="_blank"><i class="fa fa-flickr"></i></a>
+      <p class = "body">punk photography</p>
+      <ul class="fa-ul nolink">
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href="https://yavraimentrienafaire.blogspot.com/2022/01/faze.html?m=1" target = "_blank">"Faze"</a>: <a class="textlink" href= = "https://yavraimentrienafaire.blogspot.com/?m=1" target = "_blank">Rien &agrave; faire</a> -- 07 January 2022</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href="https://www.facebook.com/noticketsatthedoor" target = "_blank">"No Tickets at the Door" film by Danny Alexander</a> -- June 2021</p></li>
+      	<li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href="https://thelocal.to/faith-void-was-a-thriving-diy-venue-then-came-the-noise-complaint/" target = "_blank">"Faith/Void was a thriving DIY Venue. Then came the noise complaint."</a>: <a class="textlink" href="https://thelocal.to/">thelocal.to</a> -- 25 August 2020</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href= = "https://hercorrosion.weebly.com/zine-issue-2.html" target = "_blank">"An interview with Ces Cad&aacute;veres"</a>: <a class="textlink" href= = "https://hercorrosion.weebly.com/" target= "_blank">Her Corrosion</a> -- August 2020</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href= = "https://razorbladesandaspirin.bigcartel.com/product/razorblades-aspirin-9-digital-download" target = "_blank">Issue #9</a>: <a class="textlink" href= = "https://razorbladesandaspirin.com/" target = "_blank">Razorblades & Aspirin</a> -- Spring 2020</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href= = "https://www.noecho.net/photographer-spotlights/photographer-spotlight-philip-monahan" target = "_blank">Photographer Spotlight</a>: <a class="textlink" href="https://www.noecho.net/" target = "_blank">noecho.net</a> -- 14 January 2020</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href= = "https://www.noecho.net/features/hardcore-album-of-2019-heavy-vibe-music-by-gazm" target = "_blank">"Hardcore album of 2019: <i>Heavy Vibe Music</i>, by Gazm"</a>: <a class="textlink" href="https://www.noecho.net/" target = "_blank">noecho.net</a> -- 23 December 2019</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class="body"><a class="textlink" href= "https://midlifecrisiserahc.bigcartel.com/product/midlife-crisis-era-hc-vol-2" target = "_blank">"Forward" in Volume 2</a>: <a class="textlink" href= = "https://midlifecrisiserahc.bigcartel.com/" target = "_blank">Midlife Crisis Era HC Zine</a> -- 27 September 2019</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href="https://www.discogs.com/Tomb-Mold-Planetary-Clairvoyance/release/13909660" target = "_blank">Limited Tour Edition LP</a>: <a class="textlink" href="https://www.20buckspin.com/products/tomb-mold-planetary-clairvoyance-lp?_pos=4&_sid=348f1550d&_ss=r" target = "_blank">Tomb Mold <i>Planetary Clairvoyance</i></a> -- 19 July 2019</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class="body"><a class="textlink" href= "https://store.maximumrocknroll.com/product/mrr-432/" target = "_blank">"Faith/Void" in MRR #432</a>: <a class="textlink" href= = "http://maximumrocknroll.com" target = "_blank">Maximum RocknRoll</a> -- May 2019</p></li>
+      </ul>
+      <p class = "body">landscape photography</p>
+      <ul class="fa-ul nolink">
+      	<li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href= = "https://www.iuniverse.com/en/bookstore/bookdetails/360911-Land-of-the-Saints" target = "_blank"><i>Land of the Saints</i> by Robert P. Desjardins</a>: <a class="textlink" href="https://www.iuniverse.com/en/" target = "_blank">iUniverise Publishing</a> -- 02 December 2011</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href= = "https://www.nationalgeographic.com/travel/traveler-magazine/unbound/playing-the-slots/" target = "_blank">"Unbound: Playing the slots"</a>: <a class="textlink" href="https://www.nationalgeographic.com" target = "_blank">National Geographic Traveler Magazine</a> -- May/June 2010</p></li>
+        <li><i class="fa-li fa fa-camera" aria-hidden="true"></i><p class = "body"><a class="textlink" href="http://www.impactphotographics.com/" target = "_blank">Impact Photographics</a> -- 2007 to present</p></li>
+      </ul>
+  </p>
+</div>
+<!--BOTTOM ICON MENU-->
+<div class="webicons iconlinks">
+  <a href="index.html"><i class="fa fa-home menuicon"></i></a>
+</div><br>
+<!--END BOTTOM ICON MENU-->
+</div>
+</div>
+</div>
+</body>
+</html>

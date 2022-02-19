@@ -1,0 +1,143 @@
+<html>
+<body>
+<head>
+  <script>
+// If `prefers-color-scheme` is not supported, fall back to light mode.
+// In this case, light.css will be downloaded with `highest` priority.
+if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+document.documentElement.style.display = 'none';
+document.head.insertAdjacentHTML(
+  'beforeend',
+  '<link rel="stylesheet" href="mystyle_light.css" onload="document.documentElement.style.display = \'\'">',
+);
+}
+</script>
+<!--
+Conditionally either load the light or the dark stylesheet. The matching file
+will be downloaded with `highest`, the non-matching file with `lowest`
+priority. If the browser doesn't support `prefers-color-scheme`, the media
+query is unknown and the files are downloaded with `lowest` priority (but
+above I already force `highest` priority for my default light experience).
+-->
+  <link rel="stylesheet" href="mystyle_dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="mystyle_light.css" media="(prefers-color-scheme: light)"/>
+  <link rel="icon" type="image/ico" href="favicon.ico"/>
+  <link rel="stylesheet" href="css/academicons.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<script src="https://kit.fontawesome.com/671b425026.js" crossorigin="anonymous"></script>-->
+</head>
+<title>philip j monahan</title>
+<div class="container">
+<div class="outer">
+<div class="page">
+<h1 align="right">philip j monahan</h1>
+
+<!--NAVIGATION-->
+<nav id="primary_nav_wrap">
+<ul>
+  <li><a href="index.html">home</a></li>
+  <li class="current-menu-item"><a href="research.html">research</a></li>
+  <li><a href="teaching.html">teaching</a></li>
+  <li><a href="personal.html">personal</a></li>
+</ul>
+</nav>
+<!--END NAVIGATION-->
+<div class="body">
+    <p class="body">For presentations, funding and supervision, see my <a class="textlink" href="monahan_cv.pdf" target = "_blank">curriculum vitae</a>.</p><br>
+
+    <h2>submitted</h2>
+    <ul class="fa-ul" style="padding-left:20px">
+
+        <li><a href="https://doi.org/10.31219/osf.io/gsfj4" target = "_blank"><i class="ai-li ai ai-osf" aria-hidden="true"></i></a><p class = "body">Soo R, <b>Monahan PJ</b> (submitted). Phonetic and lexical encoding of tone in Cantonese heritage speakers.</li>
+</ul>
+
+<br>
+  <h2>peer-reviewed</h2>
+<ul class="fa-ul" style="padding-left:20px">
+
+  <li><a href="https://doi.org/10.31219/osf.io/54j9h" target = "_blank"><i class="ai-li ai ai-osf" aria-hidden="true"></i></a><p class = "body">Soo R, <b>Monahan PJ</b> (accepted). Language dominance and order of acquisition affect auditory translation priming in heritage speakers. <em>Quarterly Journal of Experimental Psychology</em>. <a href="https://osf.io/ef24s/" target = "_blank"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
+
+  <li><a href="https://doi.org/10.31234/osf.io/tzhn4" target = "_blank"><i class="ai-li ai ai-psyarxiv-square" aria-hidden="true"></i></a><p class = "body">P&eacute;rez A, Davis MH, Ince RAA, Zhang H, Fu Z, Lamarca M, Lambon Ralph MA, <b>Monahan PJ</b> (in press). Timing of brain entrainment to the speech envelope during speaking, listening and self-listening. <em>Cognition</em>. <a href="https://osf.io/whuxy/" target="_blank"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
+
+  <li><a href="https://doi.org/10.1162/jocn_a_01817" target = "_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b>, Schertz J, Fu Z, P&eacute;rez A (in press). Unified coding of spectral and temporal phonetic cues:  Electrophysiological evidence for abstract phonological features. <em>Journal of Cognitive Neuroscience</em>. <a href="https://osf.io/jn5cr/" target = "_blank"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
+
+  <li><a href="https://doi.org/10.3389/fcomm.2021.807995" target = "_blank"><i class="ai-li ai ai-open-access" aria-hidden="true" ></i></a><p class = "body">Howson PJ, <b>Monahan PJ</b> (2022). Acoustic-perceptual factors both maintain and account for the rarity of the Czech trill-fricative. <em>Frontiers in Communication</em> 6: 807995. <a href="https://osf.io/6j7nt/" target = "_blank"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
+
+  <li><a href="https://doi.org/10.1016/j.mex.2021.101347" target = "_blank"><i class="ai-li ai ai-open-access" aria-hidden="true" ></i></a><p class = "body">P&eacute;rez A, <b>Monahan PJ</b>, Lambon Ralph MA (2021). Joint recording of EEG and audio signals in hyperscanning and pseudo-hyperscanning experiments. <em>MethodsX</em> 8: 101347.</li>
+
+  <li><a href="https://doi.org/10.3389/fnhum.2021.609898" target="_blank"><i class="ai-li ai ai-open-access" aria-hidden="true" ></i></a><p class = "body">Fu Z, <b>Monahan PJ</b> (2021). Extracting phonetic features from natural classes: A mismatch negativity study of Mandarin Chinese retroflex consonants. <em>Frontiers in Human Neuroscience</em> 15: 609898. <a href="https://osf.io/uyg9e/" target = "_blank"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
+
+  <li><a href="https://doi.org/10.1121/10.0002116" target="_blank"><i class="ai-li ai ai-open-access" aria-hidden="true" ></i></a><p class = "body">Soo R, Sidiqi A, Shah M, <b>Monahan PJ</b> (2020). Lexical bias in second language perception: Word position, age of arrival, and native language phonology. <em>The Journal of the Acoustical Society of America</em> 148(4): EL326-EL332.</li>
+
+  <li><a href="https://doi.org/10.1016/j.mex.2020.100790" target="_blank"><i class="ai-li ai ai-open-access" aria-hidden="true" ></i></a><p class = "body">Howson PJ, <b>Monahan PJ</b> (2020). A method for comparing perceptual distances and areas with multidimensional scaling. <em>MethodsX</em> 7: 100790.</li>
+
+  <li><a href="https://doi.org/10.1016/j.specom.2019.10.002" target="_blank"><i class="ai-li ai ai-open-access" aria-hidden="true" ></i></a><p class = "body">Howson PJ, <b>Monahan PJ</b> (2019). Perceptual motivation for rhotics as a class. <i>Speech Communication</i> 115: 15-28.</li>
+
+  <li><a href="https://doi.org/10.1146/annurev-linguistics-011817-045537" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b> (2018). Phonological knowledge and speech comprehension. <em>Annual Review of Linguistics</em> 4(1): 21-47.</li>
+
+  <li><a href="http://dx.doi.org/10.1177/0023830916650714" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body"><b>Martin AE</b>*, <b>Monahan PJ</b>*, Samuel AG (2017). Prediction of agreement and phonetic overlap shape sublexical identification. <em>Language and Speech</em> 60(3): 356-376.<font size=2> *Authors contributed equally, names appear alphabetically.</font></li>
+
+  <li><a href="http://dx.doi.org/10.1016/j.neuroimage.2016.01.003" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Scharinger M, <b>Monahan PJ</b>, Idsardi WJ (2016).  Linguistic category structure influences early auditory processing: Converging evidence from mismatch responses and cortical oscillations. <em>NeuroImage</em> 128(1): 293-301.</li>
+
+  <li><a href="http://dx.doi.org/10.1037/xlm0000130" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Gwilliams L, <b>Monahan PJ</b>, Samuel AG (2015). Sensitivity to morphological composition in spoken word recognition: Evidence from grammatical and lexical identification tasks. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em> 41(6): 1663-1674.</li>
+
+  <li><a href="http://dx.doi.org/10.1016/j.neuroimage.2015.06.021" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Carreiras M, <b>Monahan PJ</b>, Lizarazu M, Du&ntilde;abeitia JA, Molinaro N (2015). Numbers are not like words: Different pathways for literacy and numeracy. <em>NeuroImage</em> 118(1): 79-89.</li>
+
+  <li><a href="http://dx.doi.org/10.1044/1092-4388(2011/11-0065)" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Scharinger M, <b>Monahan PJ</b> & Idsardi WJ (2012). Asymmetries in the processing of vowel height. <em>Journal of Speech, Language, and Hearing Research</em> 55(3): 903-918.</li>
+
+  <li><a href="http://dx.doi.org/10.1162/jocn_a_00035" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Lehtonen M, <b>Monahan PJ</b>, Poeppel D (2011). Evidence for early morphological decomposition: Combining masked priming with MEG. <em>Journal of Cognitive Neuroscience</em> 23(11): 3366-3379.</li>
+
+  <li><a href="http://dx.doi.org/10.1080/01690965.2010.493301" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Poeppel D, <b>Monahan PJ</b> (2011). Feedforward and feedback in speech perception: Revisiting analysis by synthesis. <em>Language and Cognitive Processes</em> 26(7): 935-951.</li>
+
+  <li><a href="http://dx.doi.org/10.1016/j.neuroimage.2011.04.007" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Scharinger M, <b>Monahan PJ</b>, Idsardi WJ (2011). You had me at 'Hello': Rapid extraction of dialect information from spoken words. <em>NeuroImage</em> 56(4): 2329-2338.</li>
+
+  <li><a href="http://dx.doi.org/10.1080/01690965.2010.490047" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b>, Idsardi WJ (2010). Auditory sensitivity to formant ratios: Toward an account of vowel normalization. <em>Language and Cognitive Processes</em> 25(6): 808-839.</li>
+
+  <li><a href="http://dx.doi.org/10.1017/S0952675710000102" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Hwang S-OK, <b>Monahan, PJ</b>, Idsardi WJ (2010). Underspecification and asymmetries in voicing perception. <em>Phonology</em> 27(2): 205-224.</li>
+
+  <li><a href="http://dx.doi.org/10.1371/journal.pone.0002900" target="_blank"><i class="ai-li ai ai-open-access" aria-hidden="true"></i></a><p class = "body"><b>Monahan PJ</b>, de Souza K, Idsardi WJ (2008). Neuromagnetic evidence for early auditory restoration of fundamental pitch. <em>PLoS One</em> 3(8): e2900.</li>
+
+  <li><a href="http://dx.doi.org/10.1016/j.bandl.2008.02.002" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b>, Fiorentino R, Poeppel D (2008). Masked repetition priming using magnetoencephalography. <em>Brain and Language</em> 106(1): 65-71.</li>
+
+  <li><a href="http://dx.doi.org/10.1111/j.1467-8721.2008.00553.x" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Poeppel D, <b>Monahan PJ</b> (2008). Speech perception: Cognitive foundations and cortical implementation. <em>Current Directions in Psychological Science</em> 17(2): 80-85.</li>
+
+  <li><a href="papers/Polinsky_2007_LangRes.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body">Polinsky M, <b>Monahan PJ</b>, Kwon N (2007). Object control in Korean: How many constructions? <em>Language Research</em> 43(1): 1-33.</li>
+</ul>
+
+<br>
+
+<h2>chapters + proceedings</h2>
+<ul class="fa-ul" style="padding-left:20px">
+  <li><a href="papers/Taghipour and Monahan - CLA_ACL2020.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body">Taghipour S, <b>Monahan PJ</b> (2020). Early morphological decomposition: The effect of derivational gaps. In <em>Proceedings of the 2020 Annual Conference of the Canadian Linguistic Association</em>, eds, A Hern&aacute;ndez & ME Butterworth, 12 pp. Canadian Linguistic Association.</li>
+
+  <li><a href="papers/Soo_Monahan_2017_BLS43_online.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body">Soo R, <b>Monahan PJ</b> (2017). Language exposure modulates the role of tone in perception and long-term memory: Evidence from Cantonese native and heritage speakers. In <em>Proceedings of the 43rd Annual Meeting of the Berkeley Linguistics Society</em> (Volume II), eds, J Nee, M Cychosz, D Hayes, T Lau & E Ramirez, pp. 47-54. Berkeley, CA: Berkeley Linguistics Society.</li>
+
+  <li><a href="https://doi.org/10.1016/B978-0-12-407794-2.00012-2" target="_blank"><i class="ai-li ai ai-doi" aria-hidden="true" ></i></a><p class = "body">Idsardi WJ, <b>Monahan PJ</b> (2016). Phonology. In <em>The Neurobiology of Language</em>, eds, G Hickok & SL Small, pp. 141-151. Amsterdam: Academic Press.</li>
+
+  <li><a href="papers/Murphy_2016_CLA.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body">Murphy P, <b>Monahan PJ</b>, Grant M (2016). Affrication patterns and perceptual tendencies in Canadian and European French. In <em>Proceedings of the 2016 Annual Conference of the Canadian Linguistic Association</em>, ed, L Hrasc, 14 pp. Canadian Linguistic Association.</li>
+
+  <li><a href="papers/Howson_Monahan_2015Chapter.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body">Howson P, <b>Monahan PJ</b> (2015). Simple phonological contrasts causing complex phonetic differences. In <em>Tackling the Complexity of Speech</em>, eds, O Niebuhr & R Skarnitzl, pp. 113-121. Prague: Charles University.</li>
+
+  <li><a href="papers/Monahan_2013_BioLing.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b>, Lau EF, Idsardi WJ (2013). Computational primitives in phonology and their neural correlates. In <em>The Cambridge Handbook of Biolinguistics</em>, eds, C Boeckx & KK Grohmann, pp. 233-256. Cambridge, UK: Cambridge University Press.</li>
+
+  <li><a href="papers/Kwon_2010_MvmtCntrl.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body">Kwon N, <b>Monahan PJ</b>, Polinsky M (2010) Object control in Korean: A backward control imposter. In <em>Movement Theory of Control</em>, eds, N Hornstein & M Polinsky, pp. 299-327. Amsterdam: John Benjamins Publishing.</li>
+
+  <li><a href="papers/Monahan_2009_JK.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b>, Takahashi E, Nakao C, Idsardi WJ (2009) Not all epenthetic contexts are equal: Differential effects in Japanese illusory vowel perception. In <em>Japanese/Korean Linguistics</em>, Vol. 17, eds, S Iwasaki, H Hoji, PM Clancy & SO Sohn, pp. 391-405. Stanford, CA: CSLI.</li>
+
+  <li><a href="papers/Monahan_2009_EALL.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b> (2009). Vowel harmony. In <em>The Encyclopedia of Arabic Language and Linguistics</em>, eds, M Eid, A Elgibali, K Versteegh, M Woidich & A Zaborski, pp. 676-677. Leiden: Brill Academic Publishing.</li>
+
+  <li><a href="papers/Monahan_2003_WCCFL.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b> (2003). Backward object control in Korean. In <em>Proceedings of the 22nd West Coast Conference on Formal Linguistics</em>, eds, G Garding & M Tsujimura, pp. 356-369. Somerville, MA: Cascadilla Press.</li>
+
+  <li><a href="papers/Monahan_2002_TLS.pdf" target="_blank"><i class="fa-li fa fa-file-pdf-o" aria-hidden="true" ></i></a><p class = "body"><b>Monahan PJ</b> (2003). Harmony and metrical structure in Palestinian Arabic. In <em>Proceedings of the 2002 Texas Linguistics Society</em>, eds, A Agwuele & HS Park, 17 pp. Austin, TX: Texas Linguistics Forum.</li>
+</ul>
+</div>
+<!--BOTTOM ICON MENU-->
+<div class="webicons iconlinks">
+  <a href="index.html"><i class="fa fa-home menuicon"></i></a>
+</div><br>
+<!--END BOTTOM ICON MENU-->
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

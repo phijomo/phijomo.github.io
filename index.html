@@ -1,0 +1,98 @@
+<html>
+  <body>
+    <head>
+      <script>
+  // If `prefers-color-scheme` is not supported, fall back to light mode.
+  // In this case, light.css will be downloaded with `highest` priority.
+  if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+    document.documentElement.style.display = 'none';
+    document.head.insertAdjacentHTML(
+      'beforeend',
+      '<link rel="stylesheet" href="mystyle_light.css" onload="document.documentElement.style.display = \'\'">',
+    );
+  }
+</script>
+<!--
+  Conditionally either load the light or the dark stylesheet. The matching file
+  will be downloaded with `highest`, the non-matching file with `lowest`
+  priority. If the browser doesn't support `prefers-color-scheme`, the media
+  query is unknown and the files are downloaded with `lowest` priority (but
+  above I already force `highest` priority for my default light experience).
+-->
+      <link rel="stylesheet" href="mystyle_dark.css" media="(prefers-color-scheme: dark)" />
+      <link rel="stylesheet" href="mystyle_light.css" media="(prefers-color-scheme: light)"/>
+      <link rel="icon" type="image/ico" href="favicon.ico"/>
+      <link rel="stylesheet" href="css/academicons.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<script src="https://kit.fontawesome.com/671b425026.js" crossorigin="anonymous"></script>-->
+    </head>
+    <title>philip j monahan</title>
+      <div class="outer">
+      <div class="page">
+        <h1 align="right">philip j monahan</h1>
+
+<!--NAVIGATION-->
+<nav id="primary_nav_wrap">
+  <ul>
+    <li class="current-menu-item"><a href="index.html">home</a></li>
+    <li><a href="research.html">research</a></li>
+    <li><a href="teaching.html">teaching</a></li>
+    <li><a href="personal.html">personal</a></li>
+  </ul>
+</nav>
+
+<!--END NAVIGATION-->
+<div class="body nolink">
+<table cellpadding="5" width="100%" border="0">
+  <td style="vertical-align:top"><img src="images/me_3.jpg" class="textwrap">
+  </td>
+  <td style="vertical-align:top;width:200">
+<ul class="fa-ul">
+  <li><i class="fa fa-li fa-gears" aria-hidden="true"></i><p class="body">Associate Professor<br>Linguistics<br>
+  <li><i class="fa fa-li fa-book" aria-hidden="true"></i><p class="body">speech perception<br>psycholinguistics<br>cognitive neuroscience<br>phonetics<br>phonology<br>lexical access</li>
+</ul>
+</td>
+<td style="vertical-align:top">
+<ul class="fa-ul">
+<li><i class="fa fa-li fa-university" aria-hidden="true"></i><p class="body"><a class="textlink" href="http://utsc.utoronto.ca/dls" target="_blank">Department of Language Studies</a><br>
+  <a class="textlink" href="http://utsc.utoronto.ca/" target="_blank">University of Toronto Scarborough</a><br>
+  office: <a class="textlink" href="https://map.utoronto.ca/?id=1809#!m/493669" target="_blank">MW338</a><br>
+  phone: <a class="textlink" href="tel:+14162877149">(416) 287-7149</a></p></li>
+<li><i class="fa fa-li fa-university" aria-hidden="true"></i><p class="body"><a class="textlink" href="http://linguistics.utoronto.ca/" target="_blank">Department of Linguistics</a><br>
+<a class="textlink" href="http://www.utoronto.ca/" target="_blank">University of Toronto</a><br>
+office: <a class="textlink" href="https://map.utoronto.ca/?id=1809#!m/494510" target="_blank">SS4082</a><br>
+phone: <a class="textlink" href="tel:+14169786373">(416) 978-6373</a></p></li>
+</ul>
+</td>
+
+<td style="vertical-align:top">
+<ul class="fa-ul">
+<li><i class="fa fa-li fa-cogs" aria-hidden="true"></i><p class="body">Post-doctoral Researcher<br>Marie Curie IIF Fellow<br><a class="textlink" href="http://www.bcbl.eu" target="_blank">BCBL</a> 2010-2013</p></li>
+<li><i class="fa fa-li fa-graduation-cap" aria-hidden="true"></i><p class="body">PhD <a class="textlink" href="http://linguistics.umd.edu" target="_blank">Linguistics</a><br><a class="textlink" href="http://www.umd.edu" target="_blank">University of Maryland</a> 2009</p></li>
+<li><i class="fa fa-li fa-graduation-cap" aria-hidden="true"></i><p class="body">MA <a class="textlink" href="http://lin.ufl.edu" target="_blank">Linguistics</a><br><a class="textlink" href="http://www.ufl.edu" target="_blank">University of Florida</a> 2003</p></li>
+<li><i class="fa fa-li fa-graduation-cap" aria-hidden="true"></i><p class="body">BA <a class="textlink" href="http://lin.ufl.edu" target="_blank">Linguistics</a> <i>magna cum laude</i><br><a class="textlink" href="http://www.ufl.edu" target="_blank">University of Florida</a> 2001</p></li>
+</ul>
+</td>
+</table>
+</div>
+<!--BOTTOM ICON MENU-->
+<div class="webicons">
+  <script type="text/javascript">
+    var hostname = 'utoronto.ca';
+    var emailE = ('philip.monahan' + '@' + hostname);
+    document.write('<a class="iconlinks" href="mailto:' + emailE + '">' + '<i class=\"fa fa-envelope\"></i>' + '</a>');
+  </script>
+  <a class="iconlinks" href="http://www.utsc.utoronto.ca/labs/caplab/" target="_blank"><i class="fa fa-flask" aria-hidden="true"></i></a>
+  <a class="iconlinks" href="monahan_cv.pdf" target="_blank"><i class="ai ai-cv"></i></a>
+  <a class="iconlinks" href="https://osf.io/bx6vd/" target="_blank"><i class="ai ai-osf"></i></a>
+  <a class="iconlinks" href="https://orcid.org/0000-0001-8637-1889" target="_blank"><i class="ai ai-orcid"></i></a>
+  <a class="iconlinks" href="https://github.com/phijomo/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  <a class="iconlinks" href="https://scholar.google.com/citations?user=GTLIf58AAAAJ&hl=" target="_blank"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+  <a class="iconlinks" href="https://www.instagram.com/phijomo/" target="_blank"><i class="fa fa-instagram"></i></a>
+</div>
+<!--END BOTTOM ICON MENU-->
+</div>
+</div>
+</div>
+</body>
+</html>
