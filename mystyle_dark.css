@@ -88,6 +88,30 @@ p.body {
 	color:#ccc;
 }
 
+.column-index {
+	display:flex;
+	justify-content: space-between;
+	max-width:1000px;
+	text-align:left;
+	margin-top:100px;
+}
+
+.column-image {
+	width:20%;
+}
+
+.column-position {
+	width:20%;
+}
+
+.column-contact {
+	width:28%;
+}
+
+.column-education {
+	width:28%;
+}
+
 img {
 	width:200px;
 	border: 2px solid #ccc;
