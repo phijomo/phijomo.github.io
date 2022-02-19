@@ -169,18 +169,6 @@ img.textwrap {
 	background:#bbb;
 }
 
-#primary_nav_wrap ul a
-{
-	display:block;
-	text-decoration:none;
-	color:#ddd;
-	font-weight:700;
-	font-size:12px;
-	line-height:32px;
-	padding:0 15px;
-	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
-}
-
 #primary_nav_wrap ul li.current-menu-item
 {
 	background:#444;
