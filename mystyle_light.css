@@ -84,7 +84,7 @@ div.body {
 
 p.body {
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size:0.9rem;
+	font-size:1rem;
 	padding:0rem;
 	color:black;
 }
@@ -147,7 +147,7 @@ img.textwrap {
 	text-decoration:none;
 	color:#333;
 	font-weight:700;
-	font-size:0.9rem;
+	font-size:1rem;
 	line-height:2rem;
 	padding:0rem 1rem;
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
