@@ -1,13 +1,13 @@
 h1 {
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-	margin-right:10px;
-	margin-bottom:0;
+	margin-right:1rem;
+	margin-bottom:0rem;
 	color:#ddd;
 }
 
 h2 {
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size:1.2vem;
+	font-size:1rem;
 	color:#ddd;
 }
 
@@ -29,28 +29,33 @@ h2 {
 /*ICON LINKS*/
 
 .fa, .ai {
+	font-size:1.3rem;
 	color:#87CEFA;
-	font-size:20px;
 }
 
 .fa:hover, .ai:hover {
 	color:#bbb;
 }
 
+.fa-file-pdf-o {
+	font-size:1.3rem !important;
+}
+
 .nolink .fa, .nolink .ai {
 	color:#ddd;
-	font-size:16px;
+	font-size:1.3rem;
 }
 
 .webicons {
-		margin-top:50px;
-		text-align:right;
+	margin-top:3.125rem;
+	margin-right: 1rem;
+	text-align:right;
 }
 
 .webicons .fa, .webicons .ai {
 	color:#87CEFA;
-	font-size:30px;
-	padding-left:16px;
+	font-size:1.8rem;
+	padding-left:1rem;
 }
 
 .iconlinks:hover .fa, .iconlinks:hover .ai {
@@ -69,22 +74,22 @@ body {
 div.page {
 	padding:0px;
 	margin-top:50px;
-	margin-left:50px;
+	margin-left:100px;
 	width: 1000px;
-	text-align: justify;
-	text-justify: inter-word;
+	text-align:justify;
+	text-justify:inter-word;
 }
 
 div.body {
 	margin-top:100px;
-	text-align: justify;
-	text-justify: inter-word;
+	text-align:justify;
+	text-justify:inter-word;
 }
 
 p.body {
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size:1vem;
-	padding: 0vem;
+	font-size:0.9rem;
+	padding:0rem;
 	color:#ccc;
 }
 
@@ -94,6 +99,7 @@ p.body {
 	max-width:1000px;
 	text-align:left;
 	margin-top:100px;
+	margin-right:1rem;
 }
 
 .column-image {
@@ -119,8 +125,8 @@ img {
 
 img.textwrap {
 	float:right;
-	margin-right:0px;
-	margin-top:0px;
+	margin-right:0rem;
+	margin-top:0rem;
 	margin-left:20px;
 }
 
@@ -128,7 +134,7 @@ img.textwrap {
 
 #primary_nav_wrap
 {
-	margin-top:15px;
+	margin-top:1rem;
 }
 
 #primary_nav_wrap ul
@@ -145,9 +151,9 @@ img.textwrap {
 	text-decoration:none;
 	color:#ddd;
 	font-weight:700;
-	font-size:1vem;
-	line-height:32px;
-	padding:0 15px;
+	font-size:0.9rem;
+	line-height:2rem;
+	padding:0rem 1rem;
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
@@ -161,20 +167,15 @@ img.textwrap {
 
 #primary_nav_wrap ul li.current-menu-item
 {
-	background:#ddd;
-}
-
-#primary_nav_wrap ul li:hover a
-{
-	background:#bbb;
-}
-
-#primary_nav_wrap ul li.current-menu-item
-{
 	background:#444;
 }
 
 #primary_nav_wrap ul li:hover a
 {
 	background:#666;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
 }
