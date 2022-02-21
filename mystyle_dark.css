@@ -28,7 +28,7 @@ h2 {
 
 /*ICON LINKS*/
 
-.fa, .ai {
+.fa, .fa-li, .ai, .ai-li {
 	font-size:1.3rem;
 	color:#87CEFA;
 }
@@ -41,7 +41,7 @@ h2 {
 	font-size:1.3rem !important;
 }
 
-.nolink .fa, .nolink .ai {
+.nolink .fa, .nolink .ai, .nolink .fa-li, .nolink .ai-li {
 	color:#ddd;
 	font-size:1.3rem;
 }
