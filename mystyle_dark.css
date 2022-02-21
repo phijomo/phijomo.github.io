@@ -46,7 +46,7 @@ h2 {
 	font-size:1.3rem;
 }
 
-.legend .far, .legend .ai, .legend .far, .legend .fas {
+.legend .far, .legend .ai, .legend .fa-regular, .legend .fa-solid {
 	color:#ccc;
 }
 
