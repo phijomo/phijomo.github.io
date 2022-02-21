@@ -103,15 +103,15 @@ p.body {
 }
 
 .column-image {
-	width:20%;
+	width:18%;
 }
 
 .column-position {
-	width:20%;
+	width:22%;
 }
 
 .column-contact {
-	width:28%;
+	width:29%;
 }
 
 .column-education {
@@ -119,6 +119,7 @@ p.body {
 }
 
 img {
+	float:left;
 	width:200px;
 	border: 2px solid #ccc;
 }
