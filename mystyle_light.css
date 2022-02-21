@@ -33,7 +33,7 @@ h2 {
 	color:#2E86C1;
 }
 
-.fa:hover, .ai:hover {
+.fa:hover, .ai:hover, .fa-li:hover, .ai-li:hover {
 	color:#bbb;
 }
 
