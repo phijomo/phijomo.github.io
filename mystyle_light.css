@@ -46,6 +46,10 @@ h2 {
 	font-size:1.3rem;
 }
 
+.legend .far, .legend .ai, .legend .far, .legend .fas {
+	color:#000;
+}
+
 .webicons {
 	margin-top:3.125rem;
 	margin-right: 1rem;
