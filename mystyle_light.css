@@ -42,12 +42,12 @@ h2 {
 }
 
 .nolink .fa, .nolink .ai, .nolink .fa-li, .nolink .ai-li {
-	color:#aaa;
+	color:#bbb;
 	font-size:1.3rem;
 }
 
 .legend .far, .legend .ai, .legend .fa-regular, .legend .fa-solid {
-	color:#000;
+	color:#bbb;
 }
 
 .webicons {
